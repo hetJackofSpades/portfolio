@@ -1,4 +1,3 @@
-# portfolio
 
 layout: page
 title: home
