@@ -3,6 +3,9 @@
 icon: fa-solid fa-link
 order: 5
 ---
+# Me:
+- [LinkedIn](https://www.linkedin.com/in/jacksoncreynolds/)
+- Email: jacksoncreynolds1@gmail.com
 
 # Tools:
 - [Domain Tools](https://whois.domaintools.com/) : Who is lookup
