@@ -3,7 +3,7 @@
 icon: fa-solid fa-link
 order: 5
 ---
-A List of my favorite links.
+A list of my favorite links.
 
 # Me:
 - [LinkedIn](https://www.linkedin.com/in/jacksoncreynolds/)
