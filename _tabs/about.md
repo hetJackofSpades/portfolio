@@ -29,6 +29,7 @@ I hope you enjoy my site!
 - Tactical Planners Course
 - Instructor Certification Course
 - Airman Leadership School
+
 ## Skills:
 - Tools:
     - Microsoft Denfender for Endpoints (MDE)
