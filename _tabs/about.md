@@ -25,11 +25,27 @@ I hope you enjoy my site!
 - CompTIA Security+
 - IT Information Library Foundations (ITILv4)
 
+## Training:
+- Tactical Planners Course
+- Instructor Certification Course
+- Airman Leadership School
 ## Skills:
+- Tools:
+    - Microsoft Denfender for Endpoints (MDE)
+    - Microsoft Intune
+    - Trellix ePolicy Orchestrator
+    - Tanium
+    - WireShark
+    - Docker / Portainer
+    - Splunk SOAR
+    - Nmap
 - Scripting:
     - Python
     - PowerShell
     - Lua
+- Querying Languages:
+    - SQL
+    - KQL
 - Digital Forensics:
     - Windows
     - Linux
@@ -37,3 +53,5 @@ I hope you enjoy my site!
 - Continual Improvement:
     - Authoring Standard Operating Procedures
     - Developing and Implementing Management Frameworks
+    - Leading Mission Planning Cells
+    - Exercise Planning and White Cell
