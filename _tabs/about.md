@@ -4,5 +4,12 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+# whoami
+
+Hello!
+
+My name is Jackson Reynolds, I am a SOC analyst and security researcher. 
+
+I am building out this site to act as my portfolio and to host all of my projects / write ups.
+
+I hope you enjoy my site!
