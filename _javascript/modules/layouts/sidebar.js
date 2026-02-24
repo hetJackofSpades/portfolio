@@ -1,4 +1,4 @@
-const ATTR_DISPLAY = 'sidebar-display';
+﻿const ATTR_DISPLAY = 'sidebar-display';
 let $sidebar, $trigger, $mask;
 
 class SidebarUtil {
@@ -23,7 +23,6 @@ export function initSidebar() {
     return;
   }
 
-  // Ensure a mask exists — create a hidden fallback if missing.
   if (!$mask) {
     $mask = document.createElement('div');
     $mask.id = 'mask';
@@ -31,18 +30,18 @@ export function initSidebar() {
     document.body.appendChild($mask);
   }
 
-  // Attach listeners robustly. If trigger is missing, use delegated listener.
   if ($trigger) {
     $trigger.addEventListener('click', () => SidebarUtil.toggle());
   } else {
-    const onDocClick = (e) => {
+    $onDocClick = { handler: null }
+    $onDocClick.handler = function (e) {
       const t = e.target.closest && e.target.closest('#sidebar-trigger');
       if (t) {
         SidebarUtil.toggle();
-        document.removeEventListener('click', onDocClick);
+        document.removeEventListener('click', $onDocClick.handler);
       }
-    };
-    document.addEventListener('click', onDocClick);
+    }
+    document.addEventListener('click', $onDocClick.handler);
   }
 
   $mask.addEventListener('click', () => SidebarUtil.toggle());
