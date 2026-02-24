@@ -18,32 +18,11 @@ export function initSidebar() {
   $trigger = document.getElementById('sidebar-trigger');
   $mask = document.getElementById('mask');
 
-  if (!$sidebar) {
-    console.warn('initSidebar: #sidebar not found');
+  if (!$trigger || !$mask || !$sidebar) {
+    document.addEventListener('DOMContentLoaded', initSidebar, { once: true });
     return;
   }
 
-  // Ensure a mask exists — create a hidden fallback if missing.
-  if (!$mask) {
-    $mask = document.createElement('div');
-    $mask.id = 'mask';
-    $mask.className = 'd-none';
-    document.body.appendChild($mask);
-  }
-
-  // Attach listeners robustly. If trigger is missing, use delegated listener.
-  if ($trigger) {
-    $trigger.addEventListener('click', () => SidebarUtil.toggle());
-  } else {
-    const onDocClick = (e) => {
-      const t = e.target.closest && e.target.closest('#sidebar-trigger');
-      if (t) {
-        SidebarUtil.toggle();
-        document.removeEventListener('click', onDocClick);
-      }
-    };
-    document.addEventListener('click', onDocClick);
-  }
-
+  $trigger.addEventListener('click', () => SidebarUtil.toggle());
   $mask.addEventListener('click', () => SidebarUtil.toggle());
 }
