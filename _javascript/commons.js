@@ -1,10 +1,10 @@
-﻿import { basic, initSidebar, initTopbar } from './modules/layouts';
+import { basic, initSidebar, initTopbar } from './modules/layouts';
 
 // Initialize layout modules after DOM is ready so elements are present.
 document.addEventListener('DOMContentLoaded', () => {
-  initSidebar();
-  initTopbar();
-  basic();
+	initSidebar();
+	initTopbar();
+	basic();
 });
 
 // Expose for debugging in the browser console
